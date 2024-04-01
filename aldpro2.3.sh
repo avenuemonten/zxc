@@ -87,13 +87,13 @@ EOF
         #done < /etc/apt/sources.list
 
         info "добавляем репозитории Astra Linux"
-        echo -e "\ndeb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repositorybase 1.7_x86-64 main non-free contrib" | sudo tee /etc/apt/sources.list
-        echo -e "deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repositoryextended 1.7_x86-64 main contrib non-free" | sudo tee -a /etc/apt/sources.list
+        echo -e "\ndeb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repository-base 1.7_x86-64 main non-free contrib" | sudo tee /etc/apt/sources.list
+        echo -e "deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.4/repository-extended 1.7_x86-64 main contrib non-free" | sudo tee -a /etc/apt/sources.list
         infok /etc/apt/sources.list
 
 # добавляем репоизтории ALDPRO
         info "добавляем репоизтории ALDPRO"
-        echo "deb https://dl.astralinux.ru/aldpro/frozen/01/2.3 1.7_x86-64 main base" >> /etc/apt/sources.list.d/aldpro.list
+        echo "deb https://dl.astralinux.ru/aldpro/frozen/01/2.3.0 1.7_x86-64 main base" >> /etc/apt/sources.list.d/aldpro.list
         infok /etc/apt/sources.list.d/aldpro.list
 
 # добавляем конфигурационный файл для ALDPRO
